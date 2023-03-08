@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.images {
+  background: url("imgs/1.png");
+  width: 900px;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 4rem auto;
+  border: 8px solid yellow;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.btn-left,
+.btn-right {
+  position: absolute;
+  background-color: blueviolet;
+  border: 5px solid blue;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-left {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+a {
+  text-decoration: none;
+}
