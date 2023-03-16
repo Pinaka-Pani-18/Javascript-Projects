@@ -12,25 +12,47 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  cursor: none;
+  background-color: black;
 }
 
 .cursor {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: black;
-  position: relative;
+  background: skyblue;
+  pointer-events: none;
+  box-shadow: 0 0 20px skyblue, 0 0 60px skyblue, 0 0 100px skyblue;
   z-index: 999;
+  display: none;
+  position: fixed;
+  transform: translate(-50%, 50%);
+  animation: colors 3s infinite;
+  -webkit-animation: colors 3s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+h1 {
+  color: white;
 }
 
 .cursor::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, 50%);
+  transform: translate(-30%, -30%);
   width: 50px;
   height: 50px;
-  background-color: red;
+  background: skyblue;
   border-radius: 50%;
+  opacity: 0.2;
 }
