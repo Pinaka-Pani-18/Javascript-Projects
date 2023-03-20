@@ -37,6 +37,12 @@ p {
   text-align: center;
   color: black;
   font-weight: 500;
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 1.5s;
 }
 
 button {
