@@ -8,8 +8,37 @@
 }
 
 body {
+  background-color: gray;
+}
+
+.stopWatch{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/background.png);
+  max-width: 600px;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  margin: 200px auto 0;
+  text-align: center;
+  color: white;
+}
+
+.stopWatch h1{
+  font-size: 80px;
+  margin: 50px 0;
+}
+
+.controls{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
+
+.stopWatch img{
+  width: 60px;
+  margin: 0 30px;
+}
+
+.stopWatch img:nth-child(2){
+  width: 90px;
+}
+
