@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StopWatch</title>
+    <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div class="stopWatch">
+        <h1 class="time">00:00:00</h1>
+        <div class="controls">
+            <img src="images/stop.png" onclick="stopTimer()" alt="stop">
+            <img src="images/start.png" onclick="startTimer()" alt="start">
+            <img src="images/reset.png" onclick="resetTimer()" alt="reset">
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
