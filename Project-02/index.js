@@ -1,20 +1,17 @@
 const btnEl = document.querySelector(".btn");
-const inputEl = document.querySelector("input");
-const messageEl = document.querySelector(".message");
-const errorEl = document.querySelector(".error");
+const bodyEl = document.querySelector("body");
 
+var colors = ["green","blue","red","orange","yellow","violet"];
 
-btnEl.addEventListener("click",displayMessage);
+bodyEl.style.background = "pink";
 
-function displayMessage(){
-    if(inputEl.value){
-        messageEl.textContent = inputEl.value;
-        inputEl.value = "";
-    }else{
-        errorEl.style.display = "block";
-       setInterval(() => {
-        errorEl.style.display = "none";
-       }, 10000);
-    }
-    
+btnEl.addEventListener("click",addColor);
+
+let count=0;
+
+function addColor(){
+    console.log("clicked");
+    // var color = parseInt(Math.random()*colors.length);
+    bodyEl.style.background = colors[count%colors.length];
+    count++;
 }
