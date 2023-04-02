@@ -19,7 +19,7 @@ body {
   background-color: white;
   color: black;
   width: 400px;
-  height: 250px;
+  min-height: 300px;
   border-radius: 10px;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
     inset -5px -5px 10px rgba(0, 0, 0, 0.3);
@@ -39,11 +39,15 @@ h1 {
   font-size: 70px;
 }
 
-.dec {
-  margin-right: 100px;
+.counters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
 }
 
-button {
+.btn {
+  color: white;
   padding: 10px 20px;
   outline: none;
   border: 1px solid black;
@@ -52,9 +56,22 @@ button {
   cursor: pointer;
 }
 
-button:active {
+.btn:active {
   position: relative;
   top: 4px;
   left: 4px;
   box-shadow: none;
+}
+
+.reset {
+  color: white;
+  background-color: black;
+  padding: 3px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reset:active {
+  transform: scale(0.95);
 }
