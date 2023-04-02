@@ -13,5 +13,6 @@ function addColor(){
     console.log("clicked");
     // var color = parseInt(Math.random()*colors.length);
     bodyEl.style.background = colors[count%colors.length];
+    // bodyEl.style.background = colors[color];
     count++;
 }
