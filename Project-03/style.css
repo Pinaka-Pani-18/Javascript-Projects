@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -9,18 +12,17 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
 }
 
 .container {
   background-color: white;
   color: black;
   width: 400px;
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
-  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3),
-    inset -3px -3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,6 +32,7 @@ body {
 h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
+  color: blueviolet;
 }
 
 .count {
@@ -44,14 +47,14 @@ button {
   padding: 10px 20px;
   outline: none;
   border: 1px solid black;
-  border-radius: 10px;
-  background-color: pink;
-  box-shadow: 1px 1px;
+  background-color: blueviolet;
+  box-shadow: 4px 4px 0px black;
   cursor: pointer;
 }
 
 button:active {
   position: relative;
-  top: 5px;
+  top: 4px;
+  left: 4px;
   box-shadow: none;
 }
