@@ -27,7 +27,7 @@ body {
 .btn-right {
   position: absolute;
   background-color: black;
-  border: 5px solid white;
+  border: 5px solid yellow;
   color: yellow;
   font-size: 18px;
   padding: 10px;
