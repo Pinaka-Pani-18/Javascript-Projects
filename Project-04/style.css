@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
 .images {
   background: url("imgs/1.png");
   width: 900px;
@@ -22,9 +26,9 @@
 .btn-left,
 .btn-right {
   position: absolute;
-  background-color: blueviolet;
-  border: 5px solid blue;
-  color: white;
+  background-color: black;
+  border: 5px solid white;
+  color: yellow;
   font-size: 18px;
   padding: 10px;
   border-radius: 5px;
