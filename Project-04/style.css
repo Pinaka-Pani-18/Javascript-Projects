@@ -8,6 +8,10 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 .images {
   background: url("imgs/1.png");
   width: 900px;
@@ -44,8 +48,4 @@ body {
   top: 50%;
   right: 0;
   transform: translate(50%, -50%);
-}
-
-a {
-  text-decoration: none;
 }
