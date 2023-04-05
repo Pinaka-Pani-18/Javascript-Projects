@@ -16,6 +16,11 @@ body {
   background-color: black;
 }
 
+h1 {
+  color: white;
+  font-size: 100px;
+}
+
 .cursor {
   width: 20px;
   height: 20px;
@@ -40,11 +45,6 @@ body {
     filter: hue-rotate(360deg);
     -webkit-filter: hue-rotate(360deg);
   }
-}
-
-h1 {
-  color: white;
-  font-size: 100px;
 }
 
 .cursor::before {
