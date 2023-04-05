@@ -1,22 +1,17 @@
-const curserEl = document.querySelector(".cursor");
-var timeout;
+const btnEl = document.querySelector(".btn");
+const jokeEl = document.querySelector(".joke");
 
-document.addEventListener("mousemove",movement);
+var URL = "https://v2.jokeapi.dev/joke/Any?type=single&amount=1";
 
-function movement(e){
-   console.log("moving")
-        let x = e.pageX;
-        let y = e.pageY;
-        curserEl.style.left = x + "px";
-        curserEl.style.top = y + "px";
-        curserEl.style.display = "block"
+btnEl.addEventListener("click",getMethod);
 
-        clearTimeout(timeout)
-        timeout = setTimeout(() => {
-        curserEl.style.display = "none"
-        }, 2000);
-}
-
-document.addEventListener("mouseout",()=>{
-    curserEl.style.display = "none"
-})
+async function getMethod(){
+    jokeEl.classList.remove("fade");
+        const data = await fetch(URL).then((e)=>
+            e.json());
+        if(data){
+            console.log(data);
+            jokeEl.innerHTML = data.joke;
+            jokeEl.classList.add("fade");
+        }
+    }

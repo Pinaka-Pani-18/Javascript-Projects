@@ -7,59 +7,120 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: blueviolet;
+  background: linear-gradient(125deg, red, orange);
+  flex-direction: column;
 }
 
 .container {
-  width: 500px;
-  min-height: 200px;
-  padding: 20px;
-  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
   background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title img {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.todo-list-bar {
+  width: 100%;
+  height: 35px;
+  background-color: gainsboro;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-}
-
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: blueviolet;
-  text-transform: uppercase;
-  text-shadow: 1px 1px black;
-  margin-bottom: 1.5rem;
-}
-
-.search-container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 input {
-  padding: 5px 10px;
-  font-weight: 500;
+  flex: 1;
+  padding: 10px 20px;
+  border-radius: 10px;
   border: none;
-  border-bottom: 2px solid blueviolet;
-}
-
-textarea:focus,
-input:focus {
   outline: none;
+  background-color: transparent;
 }
 
-button {
-  background-color: blueviolet;
+.addBtn {
+  padding: 5px 20px;
+  font-size: 15px;
+  outline: none;
   border: none;
-  color: white;
-  border-radius: 2rem;
+  border-radius: 20px;
+  background-color: #ff3939;
   cursor: pointer;
+  color: white;
+}
+
+ul {
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 15px;
+  padding: 5px 5px 5px 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 0px;
+  transform: translate(50%, -50%);
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 0px;
+  transform: translate(50%, -50%);
+}
+
+span {
+  position: absolute;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 0;
+  line-height: 21px;
+  transform: translate(-50%, -50%);
+  padding-left: 4.5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+span:hover {
+  background: gainsboro;
 }

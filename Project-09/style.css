@@ -8,119 +8,37 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(125deg, red, orange);
-  flex-direction: column;
+  background-color: gray;
 }
 
-.container {
-  width: 100%;
-  max-width: 420px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.title img {
-  margin-left: 10px;
-  width: 40px;
-  height: 40px;
-}
-
-.todo-list-bar {
-  width: 100%;
-  height: 35px;
-  background-color: gainsboro;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-input {
-  flex: 1;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-.addBtn {
-  padding: 5px 20px;
-  font-size: 15px;
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  background-color: #ff3939;
-  cursor: pointer;
+.stopWatch{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/background.png);
+  max-width: 600px;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  margin: 200px auto 0;
+  text-align: center;
   color: white;
 }
 
-ul {
-  padding: 10px;
+.stopWatch h1{
+  font-size: 80px;
+  margin: 50px 0;
 }
 
-ul li {
-  list-style: none;
-  font-size: 15px;
-  padding: 5px 5px 5px 35px;
-  position: relative;
-  cursor: pointer;
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul li::before {
-  content: "";
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background-image: url(images/unchecked.png);
-  background-size: cover;
-  background-position: center;
-  top: 50%;
-  left: 0px;
-  transform: translate(50%, -50%);
+.stopWatch img{
+  width: 60px;
+  margin: 0 30px;
 }
 
-ul li.checked {
-  text-decoration: line-through;
+.stopWatch img:nth-child(2){
+  width: 90px;
 }
 
-ul li.checked::before {
-  background-image: url(images/checked.png);
-  background-size: cover;
-  background-position: center;
-  top: 50%;
-  left: 0px;
-  transform: translate(50%, -50%);
-}
-
-span {
-  position: absolute;
-  font-size: 16px;
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  right: 0;
-  line-height: 21px;
-  transform: translate(-50%, -50%);
-  padding-left: 4.5px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-span:hover {
-  background: gainsboro;
-}

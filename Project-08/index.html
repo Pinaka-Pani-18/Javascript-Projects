@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Guide</title>
+    <title>To-Do List App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Country Guide</h1>
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Enter a country name to get the details...">
-            <button>Submit</button>
+        <div class="title">TO-DO List<img src="images/icon.png" alt=""></div>
+        <div class="todo-list-bar">
+            <input type="text" id="task" placeholder="Enter the task..." utocomplete="off">
+            <button onclick="clicked()" class="addBtn">Add</button>
         </div>
+        <ul class="lists">
+        </ul>
     </div>
+
+    <script src="index.js"></script>
 
 </body>
 

@@ -1,37 +1,41 @@
-const taskEl = document.getElementById("task");
-const listsEl = document.querySelector(".lists");
+let timeEl = document.querySelector(".time");
+let timer = null;
+let [hours,minutes,seconds] = [0,0,0];
 
-
-function clicked(){
-    if(taskEl.value===""){
-        alert("Task should not be empty")
-    }else{
-        let li = document.createElement("li");
-        li.innerHTML = taskEl.value;
-        listsEl.appendChild(li);
-        taskEl.value = "";
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+function stopWatch(){
+    seconds++;
+    if(seconds==60){
+        seconds=0;
+        minutes++;
+        if(minutes==60){
+            minutes=0;
+            hours++;
+        }
     }
-    saveData();
+
+    let h = hours<10 ? ("0"+hours) : hours;
+    let m = minutes<10 ? ("0"+minutes) : minutes;
+    let s = seconds<10 ? ("0"+seconds) : seconds;
+
+    timeEl.innerHTML = h+":"+m+":"+s;
 }
 
-listsEl.addEventListener("click",(e)=>{
-    if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
-    }else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+function startTimer(){
+    if(timer!=null){
+        clearInterval(timer);
     }
-    saveData();
-})
-
-function saveData(){
-    localStorage.setItem("data",listsEl.innerHTML);
+    timer = setInterval(stopWatch,1000);
+    console.log(timer)
 }
 
-function getData(){
-    listsEl.innerHTML = localStorage.getItem("data");
+function stopTimer(){
+    clearInterval(timer);
+    console.log(timer)
 }
 
-getData();
+function resetTimer(){
+    clearInterval(timer);
+    [hours,minutes,seconds] = [0,0,0];
+    timeEl.innerHTML = "00:00:00";
+    console.log(timer)
+}

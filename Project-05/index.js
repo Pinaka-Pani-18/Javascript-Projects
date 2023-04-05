@@ -1,5 +1,22 @@
-const t1 = gsap.timeline({default: {ease: 'power.out'}});
+const curserEl = document.querySelector(".cursor");
+var timeout;
 
-t1.to(".slider",{y:"-100%",duration:1.2});
-t1.to(".intro",{y:"0%",duration:1.2}, "-=1");
-t1.fromTo(".nav",{opacity:0},{opacity:1,duration:1});
+document.addEventListener("mousemove",movement);
+
+function movement(e){
+   console.log("moving")
+        let x = e.pageX;
+        let y = e.pageY;
+        curserEl.style.left = x + "px";
+        curserEl.style.top = y + "px";
+        curserEl.style.display = "block"
+
+        clearTimeout(timeout)
+        timeout = setTimeout(() => {
+        curserEl.style.display = "none"
+        }, 2000);
+}
+
+document.addEventListener("mouseout",()=>{
+    curserEl.style.display = "none"
+})
