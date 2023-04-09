@@ -8,11 +8,12 @@
 }
 
 body {
-  background-color: gray;
+  background-color: white;
 }
 
-.stopWatch{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/background.png);
+.stopWatch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/background.png);
   max-width: 600px;
   background-size: cover;
   background-position: center;
@@ -22,23 +23,23 @@ body {
   color: white;
 }
 
-.stopWatch h1{
+.stopWatch h1 {
   font-size: 80px;
   margin: 50px 0;
 }
 
-.controls{
+.controls {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.stopWatch img{
+.stopWatch img {
   width: 60px;
   margin: 0 30px;
+  cursor: pointer;
 }
 
-.stopWatch img:nth-child(2){
+.stopWatch img:nth-child(2) {
   width: 90px;
 }
-
