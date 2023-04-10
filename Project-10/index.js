@@ -9,14 +9,12 @@ prevEl.addEventListener("click",()=>{
     x = x + 45;
     clearTimeout(timer);
     updateContainer();
-    console.log("prev")
 })
 
 nextEl.addEventListener("click",()=>{
     x = x - 45;
     clearTimeout(timer);
     updateContainer();
-    console.log("next")
 })
 
 function updateContainer(){
@@ -25,7 +23,6 @@ function updateContainer(){
     timer = setTimeout(() => {
         x = x - 45;
         updateContainer();
-    console.log("upd")
     }, 2000);
 }
 
