@@ -23,6 +23,7 @@ body {
   min-height: 200px;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
+  transition: all 1s ease-in-out;
 }
 
 .image-container span {
@@ -62,6 +63,10 @@ body {
 
 .btn:hover {
   filter: brightness(1.5);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .prev {
