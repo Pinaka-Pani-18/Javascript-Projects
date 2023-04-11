@@ -15,6 +15,7 @@ kits.forEach((kit)=>{
         audioEl.play()
     })
 
+    // We can also get the sound of instrument by using starting letter of instrument.
     document.addEventListener("keydown",(e)=>{
         if(e.key === kit.slice(0,1)){
             audioEl.play();
