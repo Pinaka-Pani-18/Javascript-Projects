@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: red;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  text-decoration: underline;
+}
+
+.container {
+  width: 420px;
+  border-radius: 7px;
+  background: white;
+  padding: 25px 28px 45px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.container .search {
+  position: relative;
+  margin: 35px 0 18px;
+}
+
+.search input {
+  height: 53px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 42px;
+  border: 1px solid gray;
+}
+
+.search input:focus {
+  padding: 0 41px;
+  border: 2px solid red;
+}
+
+.search :where(i, span) {
+  position: absolute;
+  top: 50%;
+  color: gray;
+  transform: translateY(-50%);
+}
+
+.search i {
+  left: 18px;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.search input:focus ~ i,
+input:focus ~ span {
+  color: red;
+}
+
+.search span {
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+}
+
+.search input:valid ~ span {
+  display: block;
+}
+
+.container .info-text {
+  font-size: 15px;
+  color: black;
+  margin: 0 0 -20px;
+  text-align: center;
+}
+
+.container.active .info-text {
+  display: none;
+}
+
+.info-text span {
+  font-weight: 500;
+}
+
+.container ul {
+  height: 0;
+  opacity: 0;
+  padding-right: 1px;
+  overflow-y: hidden;
+  transition: all 0.2s ease;
+}
+
+.container.active ul {
+  opacity: 1;
+  height: 303px;
+}
+
+.container ul li {
+  display: flex;
+  list-style: none;
+  margin-bottom: 14px;
+  align-items: center;
+  padding-bottom: 17px;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul .word p {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+ul .word span {
+  font-size: 12px;
+  color: gray;
+}
+
+ul .word i {
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+ul .content {
+  max-height: 215px;
+  overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.content li p {
+  color: red;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.content li span {
+  font-size: 15px;
+  color: gray;
+}
+
+.content .synonyms .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .synonyms span {
+  margin-right: 5px;
+}
