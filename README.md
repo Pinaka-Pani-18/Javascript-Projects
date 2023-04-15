@@ -2,18 +2,34 @@
 
 In this repository I have created basic projects using HTML, CSS and JS from begininner level to advanced level.
 
-Project-01 (A message to pass)
-Project-02 (Random colors)
-Project-03 (Counter)
-Project-04 (Image slider)
-Project-05 (Animated Cursor)
-Project-06 (Random Joke Generator)
-Project-07 (Country Guide)
-Project-08 (To-Do List App)
-Project-09 (Stop Watch)
-Project-10 (Rotating Image Gallery)
-Project-11 (Drum Kits)
-Project-12 (Month Calender)
-Project-13 (Question & Answer Section)
-Project-14 (Weather App)
-Project-15 (Dictionary App)
+# project Names
+
+<h3>Project-01 (A message to pass)</h3>
+<h3>Project-02 (Random colors)</h3>
+<h3>Project-03 (Counter)</h3>
+<h3>Project-04 (Image slider)</h3>
+<h3>Project-05 (Animated Cursor)</h3>
+<h3>Project-06 (Random Joke Generator)</h3>
+<h3>Project-07 (Country Guide)</h3>
+<h3>Project-08 (To-Do List App)</h3>
+<h3>Project-09 (Stop Watch)</h3>
+<h3>Project-10 (Rotating Image Gallery)</h3>
+<h3>Project-11 (Drum Kits)</h3>
+<h3>Project-12 (Month Calender)</h3>
+<h3>Project-13 (Question & Answer Section)</h3>
+<h3>Project-14 (Weather App)</h3>
+<h3>Project-15 (Dictionary App)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
