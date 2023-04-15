@@ -7,14 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -50,6 +42,8 @@ body {
   font-weight: 500;
   text-transform: capitalize;
   padding-left: 40px;
+  border: 0;
+  outline: none;
   border-bottom: 2px solid green;
 }
 
@@ -67,6 +61,7 @@ body {
   height: 50px;
   color: green;
   background: #dff6ff;
+  border: none;
   border-radius: 50%;
   font-size: 22px;
   transition: 0.4s ease;
