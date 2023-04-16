@@ -15,7 +15,7 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-09 (Stop Watch)</h3>
 <h3>Project-10 (Rotating Image Gallery)</h3>
 <h3>Project-11 (Drum Kits)</h3>
-<h3>Project-12 (Month Calender)</h3>
+<h3>Project-12 (Calender)</h3>
 <h3>Project-13 (Question & Answer Section)</h3>
 <h3>Project-14 (Weather App)</h3>
 <h3>Project-15 (Dictionary App)</h3>
