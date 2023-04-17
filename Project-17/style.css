@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: yellow;
+  color: white;
+}
+
+.container {
+  width: 400px;
+  height: 350px;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 0 10px 0;
+}
+
+.container img {
+  width: 200px;
+  margin-bottom: -20px;
+}
+
+.container p {
+  text-align: center;
+  width: 80%;
+}
+
+.container .myLocationBtn {
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.container .myLocationBtn:active {
+  transform: scale(0.95);
+}
