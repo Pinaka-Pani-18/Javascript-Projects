@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: slateblue;
+}
+
+.container {
+  width: 400px;
+  height: 240px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: white;
+  color: slateblue;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input {
+  margin-top: -10px;
+  width: 80%;
+  height: 35px;
+  outline: none;
+  border: 2px solid slateblue;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.input::placeholder {
+  color: gray;
+  opacity: 0.8;
+}
+.input:focus {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.downloadBtn {
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  pointer-events: none;
+  background-color: slateblue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.downloadBtn:hover {
+  filter: brightness(1.2);
+}
+
+.input:valid ~ .downloadBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
