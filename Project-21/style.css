@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: purple;
+}
+
+button {
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 180px;
+  height: 50px;
+}
+
+.submitBtn:active {
+  transform: scale(0.95);
+}
+
+.pop-up {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.01);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.pop-up-open {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up img {
+  width: 100px;
+  position: absolute;
+  top: -27%;
+  left: 38%;
+}
+
+.pop-up h2 {
+  margin-top: 30px;
+  color: #ff0000;
+}
+
+.pop-up p {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.pop-up .okBtn {
+  width: 80px;
+  height: 40px;
+}
