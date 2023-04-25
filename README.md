@@ -26,3 +26,5 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-20 (Rock, Paper & Scissor Game)</h3>
 <h3>Project-21 (Pop-Up)</h3>
 <h3>Project-22 (Text Typing Animation)</h3>
+<h3>Project-23 (Dice Roll Simulator)</h3>
+<h3>Project-24 (Text to Speech Convertor)</h3>
