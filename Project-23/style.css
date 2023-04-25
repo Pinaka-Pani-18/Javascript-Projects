@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.wrapper {
+  width: 400px;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.dice {
+  font-size: 100px;
+  margin: -20px 0;
+}
+
+.dice-rolling {
+  animation: rolling 1s forwards;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotateZ(0) rotateY(0);
+  }
+  100% {
+    transform: rotateZ(720deg) rotateY(720deg);
+  }
+}
+
+.rollButton {
+  padding: 8px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.rollButton:active {
+  transform: scale(0.95);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 15px 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.7), -3px -3px 10px rgba(0, 0, 0, 0.3),
+    3px 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+span {
+  font-size: 30px;
+}
