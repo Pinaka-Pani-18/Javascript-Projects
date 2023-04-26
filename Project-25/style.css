@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container,
+.circle,
+.rating-names,
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 550px;
+  height: 400px;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin-top: -20px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  font-size: 40px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circle .emojis {
+  display: flex;
+  gap: 20px;
+  transform: translateX(180px);
+  transition: all 0.3s ease-in-out;
+}
+
+.circle .emojis img {
+  width: 70px;
+}
+
+.rating-names {
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.rating-names .names {
+  transform: translateY(80px);
+  transition: all 0.3s ease-in-out;
+}
+
+.stars {
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stars i {
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+}
