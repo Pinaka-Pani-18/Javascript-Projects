@@ -6,10 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
 
+        <div class="analog">
+            <p style="--i: 1"><span>1</span></p>
+            <p style="--i: 2"><span>2</span></p>
+            <p style="--i: 3"><span>3</span></p>
+            <p style="--i: 4"><span>4</span></p>
+            <p style="--i: 5"><span>5</span></p>
+            <p style="--i: 6"><span>6</span></p>
+            <p style="--i: 7"><span>7</span></p>
+            <p style="--i: 8"><span>8</span></p>
+            <p style="--i: 9"><span>9</span></p>
+            <p style="--i: 10"><span>10</span></p>
+            <p style="--i: 11"><span>11</span></p>
+            <p style="--i: 12"><span>12</span></p>
+
+            <div class="hands">
+                <span class="hand hour-hand"></span>
+                <span class="hand minute-hand"></span>
+                <span class="hand second-hand"></span>
+            </div>
+        </div>
+
+        <div class="date"></div>
+
+        <div class="digital">
+            <div class="time"></div>
+            <div class="ampm"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
