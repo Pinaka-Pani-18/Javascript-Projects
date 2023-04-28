@@ -7,11 +7,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --color: red;
+}
+
 body {
-  background: grey;
+  background: var(--color);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   height: 100vh;
 }
 
@@ -21,6 +27,8 @@ body {
   height: 250px;
   border-radius: 30px;
 }
+
+/* Analog Clock */
 
 .analog {
   position: relative;
@@ -43,7 +51,7 @@ body {
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
-  color: gray;
+  color: var(--color);
   transform: rotate(calc(var(--i) * (-360deg / 12)));
 }
 
@@ -59,7 +67,7 @@ body {
   width: 12px;
   border-radius: 50%;
   z-index: 100;
-  background: gray;
+  background: var(--color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -68,7 +76,7 @@ body {
 .hand {
   right: 50%;
   height: 6px;
-  background: gray;
+  background: var(--color);
   position: absolute;
   top: 50%;
   border-radius: 6px;
@@ -92,22 +100,26 @@ body {
 .hand.second-hand {
   width: 40%;
   height: 1.5px;
-  background: gray;
+  background: var(--color);
 }
+
+/* date */
 
 .date {
   font-size: 15px;
   text-align: center;
   margin-top: -50px;
   margin-bottom: 15px;
-  color: gray;
+  color: var(--color);
   font-weight: 500;
 }
+
+/* Digital Clock */
 
 .digital {
   margin-top: 10px;
   color: white;
-  background-color: gray;
+  background-color: var(--color);
   height: 50px;
   width: 90%;
   margin: auto;
@@ -125,6 +137,49 @@ body {
 
 .ampm {
   width: 20%;
-  margin-left: -37px;
-  margin-right: -8px;
+  margin-left: -30px;
+  margin-right: -10px;
+}
+
+/* Colors */
+.colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.redC {
+  background-color: red;
+}
+
+.grayC {
+  background-color: gray;
+}
+
+.slateblueC {
+  background-color: slateblue;
+}
+
+.greenC {
+  background-color: green;
+}
+
+.blueC {
+  background-color: blue;
+}
+
+.blackC {
+  background-color: black;
 }

@@ -1,4 +1,4 @@
-// to get time for analog clock
+// To get time for analog clock
 const secondHandEl = document.querySelector('.second-hand');
 const minuteHandEl = document.querySelector('.minute-hand');
 const hourHandEl = document.querySelector('.hour-hand');
@@ -24,7 +24,7 @@ setInterval(getTimeForAnalog, 1000);
 getTimeForAnalog();
 
 
-// to get date
+// To get date
 const dateEl = document.querySelector(".date");
 
 function getDate(){
@@ -40,7 +40,7 @@ const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 getDate();
 
 
-// to get time for digital clock
+// To get time for digital clock
 
 const timeEl = document.querySelector(".time");
 const ampmEl = document.querySelector(".ampm");
@@ -60,10 +60,39 @@ function getTimeForDigital() {
     const fullTime = h + " : " + m + " : " + s ;
 
     timeEl.innerHTML = fullTime;
-    ampmEl.innerHTML = AmPm
+    ampmEl.innerHTML = AmPm;
 
-    
 }
 
 setInterval(getTimeForDigital, 1000);
 getTimeForDigital();
+
+// Colors 
+const colorEl = document.querySelectorAll(".color");
+const rootEl = document.querySelector(":root");
+
+colorEl[0].addEventListener("click",()=>{
+    rootEl.style = "--color : red" 
+})
+
+colorEl[1].addEventListener("click",()=>{
+    rootEl.style = "--color : gray" 
+})
+
+colorEl[2].addEventListener("click",()=>{
+    rootEl.style = "--color : slateblue" 
+})
+
+colorEl[3].addEventListener("click",()=>{
+    rootEl.style = "--color : green" 
+})
+
+colorEl[4].addEventListener("click",()=>{
+    rootEl.style = "--color : black" 
+})
+
+colorEl[5].addEventListener("click",()=>{
+    rootEl.style = "--color : blue" 
+})
+
+
