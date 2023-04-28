@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 200px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.analog {
+  position: relative;
+  top: -30%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3), -1px -1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.analog p {
+  position: absolute;
+  inset: 8px;
+  text-align: center;
+  transform: rotate(calc(var(--i) * (360deg / 12)));
+}
+
+.analog p span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+  transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
+
+.hands {
+  height: 10px;
+  width: 10px;
+}
+
+.hands::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  z-index: 100;
+  background: gray;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hand {
+  right: 50%;
+  height: 6px;
+  background: gray;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 20%;
+  height: 4.2px;
+  z-index: 1;
+}
+
+.hand.minute-hand {
+  width: 30%;
+  height: 2.5px;
+  z-index: 2;
+}
+
+.hand.second-hand {
+  width: 40%;
+  height: 1.5px;
+  background: gray;
+}
+
+.date {
+  font-size: 15px;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  color: gray;
+  font-weight: 500;
+}
+
+.digital {
+  margin-top: 10px;
+  color: white;
+  background-color: gray;
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.time {
+  font-size: 20px;
+  width: 80%;
+}
+
+.ampm {
+  width: 20%;
+  margin-left: -37px;
+  margin-right: -8px;
+}
