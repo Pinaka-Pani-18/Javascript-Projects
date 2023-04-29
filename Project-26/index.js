@@ -56,7 +56,7 @@ function getTimeForDigital() {
     m = mins > 9 ? mins : ("0" + mins);
     s = seconds > 9 ? seconds : ("0" + seconds);
     
-    const AmPm = hour > 11 ? "AM" : "PM";
+    const AmPm = hour > 11 ? "PM" : "AM";
     const fullTime = h + " : " + m + " : " + s ;
 
     timeEl.innerHTML = fullTime;
