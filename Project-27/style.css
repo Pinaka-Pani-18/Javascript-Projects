@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instagram {
+  text-align: center;
+}
+
+.instagram h1 {
+  font-size: 200px;
+  font-weight: bold;
+  margin-bottom: -70px;
+  color: transparent;
+  background-image: url("https://media1.giphy.com/media/WrHrrwqxCTTb7uKQQX/200w.webp?cid=ecf05e47fau7gqewearxys5dibd6wtx0ybcu5ytd1lggdcnl&ep=v1_gifs_search&rid=200w.webp&ct=g");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: text;
+}
+
+.instagram p {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p span {
+  animation: glowing 2.25s linear infinite;
+}
+
+p span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+p span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+p span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+p span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+p span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+p span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+p span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+p span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+p span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+@keyframes glowing {
+  0%,
+  100% {
+    color: white;
+    text-shadow: 0 0 5px slateblue, 0 0 10px slateblue, 0 0 20px slateblue,
+      0 0 40px slateblue, 0 0 80px slateblue, 0 0 120px slateblue,
+      0 0 200px slateblue, 0 0 300px slateblue, 0 0 400px slateblue,
+      0 0 500px slateblue;
+  }
+  5%,
+  95% {
+    color: rgb(31, 27, 27);
+    text-shadow: none;
+  }
+}
+
+.thankYou {
+  background-color: slateblue;
+  color: white;
+  text-align: center;
+  width: 750px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.thankYou p {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-100px);
+  }
+  20% {
+    transform: translateY(-200px);
+  }
+  30% {
+    transform: translateY(-300px);
+  }
+  40% {
+    transform: translateY(-400px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  60% {
+    transform: translateY(-600px);
+  }
+  70% {
+    transform: translateY(-700px);
+  }
+  80% {
+    transform: translateY(-800px);
+  }
+  90% {
+    transform: translateY(-900px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+/* Fireworks */
+
+.fireworks {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
