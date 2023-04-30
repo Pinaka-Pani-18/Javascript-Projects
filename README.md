@@ -29,3 +29,6 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-23 (Dice Roll Simulator)</h3>
 <h3>Project-24 (Text to Speech Convertor)</h3>
 <h3>Project-25 (Customer Feedback)</h3>
+<h3>Project-26 (Clock (Analog + Digital))</h3>
+<h3>Project-27 (10K Followers)</h3>
+<h3>Project-28 (Custom Code Editor)</h3>
