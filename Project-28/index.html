@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- cdn link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <label for="html"><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea name="html" id="html"></textarea>
+            </div>
+            <div>
+                <label for="css"><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea name="css" id="css"></textarea>
+            </div>
+            <div>
+                <label for="js"><i class="fa-brands fa-square-js fa-css3-alt"></i>JavaScript</label>
+                <textarea name="js" id="js"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <label for="output"><i class="fa-solid fa-code"></i>Output</label>
+            <iframe src="" id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
