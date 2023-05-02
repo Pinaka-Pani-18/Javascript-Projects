@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradient Color generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <i class="fa-solid fa-rotate refreshBtn"></i>
+        <div class="gradientColorBox"></div>
+
+        <div class="direction">
+            <p>Direction</p>
+            <div class="selectContainer">
+                <select>
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top" selected>Left top</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="colorContainer">
+            <p>Colors</p>
+            <div class="colors">
+                <input type="color" value="#9acd32">
+                <input type="color" value="#daff44">
+            </div>
+        </div>
+
+        <textarea disabled>background: linear-gradient(to left top, #9acd32, #daff44);</textarea>
+        <div class="button">
+            <button class="copyBtn">Copy Code</button>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
