@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: yellowgreen;
+}
+
+.container {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+i:active {
+  transform: rotate(45deg);
+}
+
+.gradientColorBox {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to left top, #9acd32, #daff44);
+}
+
+p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.selectContainer {
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.selectContainer select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+}
+
+.colorContainer {
+  margin: 10px 0;
+}
+
+.colorContainer .colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colors input {
+  width: 49%;
+  height: 50px;
+  border: 2px solid black;
+  padding: 4px;
+}
+
+textarea {
+  color: black;
+  width: 100%;
+  font-size: 18px;
+  resize: none;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyBtn {
+  color: black;
+  background: #9acd32;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copyBtn:active {
+  transform: scale(0.95);
+}
