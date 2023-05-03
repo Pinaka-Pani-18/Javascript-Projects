@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: yellow;
+}
+
+.memeGenerator {
+  width: 450px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 3px;
+  margin-bottom: -10px;
+  color: yellow;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.meme {
+  height: 200px;
+  object-fit: cover;
+}
+
+.author {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+}
+
+.generateMemeBtn {
+  font-size: 20px;
+  padding: 20px 40px;
+  font-weight: 500;
+  background-color: yellow;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.generateMemeBtn:active {
+  transform: scale(0.95);
+}
