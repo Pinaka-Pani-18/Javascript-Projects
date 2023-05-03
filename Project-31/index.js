@@ -3,6 +3,7 @@ const memeEl = document.querySelector(".meme");
 const authorEl = document.querySelector(".author");
 const generateMemeBtnEl = document.querySelector(".generateMemeBtn");
 
+// Meme Api GitHub Link : https://github.com/D3vd/Meme_Api
 async function generateMeme(){
     const response = await fetch("https://meme-api.com/gimme/wholesomememes");
     const data = await response.json()
