@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: blueviolet;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.calculator,
+input {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15),
+    -1px -1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.calculator {
+  width: 430px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+input:not(.text) {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+input:hover:not(.text, .op) {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.op {
+  color: blueviolet;
+}
+
+.op:hover {
+  background-color: black;
+  color: blueviolet;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.output .text {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 0 0;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+.calculator .equal {
+  width: 155px;
+  border-radius: 20%;
+}
