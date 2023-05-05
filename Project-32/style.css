@@ -6,3 +6,118 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-color: skyblue;
+  color: black;
+  height: 100vh;
+}
+
+body,
+.container,
+.box,
+.small-glasses,
+.glasses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.box {
+  gap: 50px;
+}
+
+.small-glasses {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.small-glass {
+  height: 100px;
+  width: 60px;
+  background-color: white;
+  border: 3px solid blue;
+  border-radius: 0 0 50px 50px;
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+  line-height: 94px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.small-glass.full {
+  background-color: skyblue;
+  color: black;
+}
+
+.glasses {
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.big-glass {
+  color: blue;
+  background-color: white;
+  border: 3px solid blue;
+  border-radius: 0 0 100px 100px;
+  margin-top: 50px;
+  width: 150px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.remaining {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remaining .liters {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.remaining .rem {
+  font-size: 15px;
+  margin-top: -8px;
+}
+
+.percentage {
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  margin-bottom: 5px;
+}
