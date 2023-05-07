@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: red;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.6s ease-out;
+}
+
+.container.up {
+  margin-top: -100vh;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+/* Play button Container */
+
+.playBtn {
+  background-color: white;
+  color: red;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playBtn:hover {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.playBtn:active {
+  transform: scale(0.95);
+}
+
+/* Insect Selection Container */
+
+.insectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.insectBtn {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.insectBtn:hover {
+  background-color: white;
+  color: red;
+}
+
+.insectBtn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Game Container */
+
+.gameContainer {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  z-index: 100;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.message.visible {
+  top: 20%;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.insect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+  width: 100px;
+  height: 100px;
+}
