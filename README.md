@@ -35,3 +35,5 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-29 (Gradient Color Generator)</h3>
 <h3>Project-30 (Simple Calculator)</h3>
 <h3>Project-31 (Meme Generator)</h3>
+<h3>Project-32 (Drink Water)</h3>
+<h3>Project-33 (Catch the Insect Game)</h3>
