@@ -52,13 +52,15 @@ filtersEl.forEach(element => {
     });
 });
 
+// It resets the all values to initial conditions
 resetBtnEl.addEventListener("click", () => {
-    rotate = 0, flipH = 1, flipV = 1;
     saturation = "100", blur = "0", brightness = "100", contrast="100";
+    rotate = 0, flipH = 1, flipV = 1;
     generateResult();
     window.onload();
 })
 
+// This function adds image to the project when we choose a image.
 fileEl.addEventListener("change", ()=>{
         let file = fileEl.files[0];
         console.log(fileEl)
@@ -73,6 +75,7 @@ chooseBtnEl.addEventListener("click",()=>{
     fileEl.click();
 })
 
+// when we click on save button it Saves our resultant image as ResultImage.jpg
 saveBtnEl.addEventListener("click",()=>{
         const canvas = document.createElement("canvas");
         const ctx = canvas.getContext("2d");
@@ -88,11 +91,12 @@ saveBtnEl.addEventListener("click",()=>{
         ctx.drawImage(imgEl, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
         
         const link = document.createElement("a");
-        link.download = "image.jpg";
+        link.download = "ResultImage.jpg";
         link.href = canvas.toDataURL();
         link.click();
 })
 
+// when our it loads the all changes will be set to nitial values.
 window.onload = () => {
     filtersEl[0].value = "100"
     filtersEl[1].value = "0"
