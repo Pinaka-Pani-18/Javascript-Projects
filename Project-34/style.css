@@ -147,8 +147,3 @@ output {
   left: 4px;
   box-shadow: none;
 }
-
-.container.disable * {
-  pointer-events: none;
-  opacity: 0.5;
-}
