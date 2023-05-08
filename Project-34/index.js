@@ -12,11 +12,13 @@ const resetBtnEl = document.querySelector(".resetBtn");
 let saturation = "100", blur = "0", brightness = "100", contrast = "100";
 let rotate = 0, flipH = 1, flipV = 1;
 
-const applyEffect = () => {
+// It generates result of the image as preview
+const generateResult = () => {
     imgEl.style.filter = `saturate(${saturation}%) blur(${blur}px) brightness(${brightness}%) contrast(${contrast}%)`;
     imgEl.style.transform = `rotate(${rotate}deg) scale(${flipH}, ${flipV})`;
 }
 
+// This will change the image rotation or flip when we click on any of the rotation or flip. 
 anglesEl.forEach(element => {
     element.addEventListener("click", () => {
         if(element.id === "vertical") {
@@ -28,10 +30,12 @@ anglesEl.forEach(element => {
         } else {
             rotate = rotate + 90;
         }
-        applyEffect();
+        // It calls the generateResult function for every click on the rotation or flip flop
+        generateResult();
     });
 });
 
+// This will change the image filters when we give input on any of the filters. 
 filtersEl.forEach(element => {
     element.addEventListener("input", () => {
         if(element.id === "saturation") {
@@ -43,14 +47,15 @@ filtersEl.forEach(element => {
         } else {
             contrast = filtersEl[3].value;
         }
-    applyEffect();
+        // It calls the generateResult function for every click on the rotation or flip flop
+    generateResult();
     });
 });
 
 resetBtnEl.addEventListener("click", () => {
     rotate = 0, flipH = 1, flipV = 1;
     saturation = "100", blur = "0", brightness = "100", contrast="100";
-    applyEffect();
+    generateResult();
     window.onload();
 })
 
