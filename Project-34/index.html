@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="iceland">
+        </div>
+        <div class="filters">
+            <div class="filter">
+                <label for="saturation">Saturation</label>
+                <div class="input">
+                    <input type="range" min="0" max="200" id="saturation" value="18"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>100</output>
+                </div>
+            </div>
+            <div class="filter">
+                <label for="blur">Blur</label>
+                <div class="input">
+                    <input type="range" min="0" max="10" id="blur" value="18"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </div>
+            </div>
+            <div class="filter">
+                <label for="brightness">Brightness</label>
+                <div class="input">
+                    <input type="range" min="0" max="200" id="brightness" value="18"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>100</output>
+                </div>
+            </div>
+            <div class="filter">
+                <label for="contrast">Contrast</label>
+                <div class="input">
+                    <input type="range" min="0" max="200" id="contrast" value="18"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>18</output>
+                </div>
+            </div>
+        </div>
+        <ul class="angles">
+            <li id="vertical"><i class="fa-solid fa-arrows-left-right up"></i></li>
+            <li id="horizontal"><i class="fa-solid fa-arrows-left-right"></i></li>
+            <li id="left"><i class="fa-solid fa-rotate-left"></i></li>
+            <li id="right"><i class="fa-solid fa-rotate-right"></i></li>
+        </ul>
+        <div class="buttons">
+            <input type="file" class="file" accept="image/*" hidden>
+            <button class="resetBtn">R</button>
+            <button class="btn chooseBtn">Choose</button>
+            <button class="btn saveBtn">Save</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
