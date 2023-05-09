@@ -12,6 +12,14 @@ const resetBtnEl = document.querySelector(".resetBtn");
 let saturation = "100", blur = "0", brightness = "100", contrast = "100";
 let rotate = 0, flipH = 1, flipV = 1;
 
+// when this function execute all changes will be set to initial values.
+const loadEl = () =>{
+    filtersEl[0].value = "100";
+    filtersEl[1].value = "0";
+    filtersEl[2].value = "100";
+    filtersEl[3].value = "100";
+}
+
 // It generates result of the image as preview
 const generateResult = () => {
     imgEl.style.filter = `saturate(${saturation}%) blur(${blur}px) brightness(${brightness}%) contrast(${contrast}%)`;
@@ -54,10 +62,10 @@ filtersEl.forEach(element => {
 
 // It resets the all values to initial conditions
 resetBtnEl.addEventListener("click", () => {
-    saturation = "100", blur = "0", brightness = "100", contrast="100";
+    saturation = "100", blur = "0", brightness = "100", contrast = "100";
     rotate = 0, flipH = 1, flipV = 1;
     generateResult();
-    window.onload();
+    loadEl();
 })
 
 // This function adds image to the project when we choose a image.
@@ -96,10 +104,5 @@ saveBtnEl.addEventListener("click",()=>{
         link.click();
 })
 
-// when our it loads the all changes will be set to nitial values.
-window.onload = () => {
-    filtersEl[0].value = "100"
-    filtersEl[1].value = "0"
-    filtersEl[2].value = "100"
-    filtersEl[3].value = "100"
-}
+// It calls loadEl function at the beginning i.e when the website is opened
+loadEl();

@@ -22,13 +22,14 @@ body,
 
 body {
   min-height: 100vh;
+  background-color: white;
 }
 
 .container {
   flex-direction: column;
   width: 400px;
-  background-color: black;
-  color: white;
+  background-color: #f5bb00;
+  color: black;
   padding: 20px;
   border-radius: 10px;
 }
@@ -82,15 +83,15 @@ output {
   gap: 30px;
   margin-top: 5px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: black;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
 }
 
 .angles li {
-  background-color: black;
-  color: white;
+  background-color: #f5bb00;
+  color: black;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
@@ -114,16 +115,16 @@ output {
   padding: 10px 30px;
   font-size: 18px;
   background-color: transparent;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid black;
+  color: black;
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: #f5bb00;
 }
 
 .btn:active {
@@ -131,13 +132,13 @@ output {
 }
 
 .resetBtn {
-  background-color: red;
-  color: white;
+  background-color: #8ea604;
+  color: black;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: none;
-  box-shadow: 4px 4px white;
+  box-shadow: 4px 4px black;
   cursor: pointer;
 }
 
