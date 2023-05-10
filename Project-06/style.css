@@ -12,20 +12,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: yellow;
+  background-color: white;
+  color: white;
 }
 
 .container {
-  width: 500px;
-  min-height: 200px;
+  width: 600px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: yellowgreen;
+  background-color: blueviolet;
   border-radius: 20px;
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
 img {
@@ -33,28 +33,33 @@ img {
   height: 150px;
 }
 
+.category {
+  margin-bottom: 10px;
+  opacity: 0;
+}
+
 .joke {
   text-align: center;
-  color: black;
   font-weight: 500;
   opacity: 0;
 }
 
-.fade {
+.effect {
   opacity: 1;
-  transition: opacity 1.5s;
+  transition: opacity 1.2s;
 }
 
-button {
+.btn {
   padding: 10px 25px;
   margin-top: 20px;
   font-weight: bold;
-  box-shadow: 5px 5px 0;
+  box-shadow: 5px 5px black;
   cursor: pointer;
   position: relative;
+  color: blueviolet;
 }
 
-button:active {
+.btn:active {
   position: relative;
   top: 5px;
   left: 5px;
