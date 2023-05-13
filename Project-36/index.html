@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password validation</h1>
+        <div class="input">
+            <input type="password" placeholder="password" autocomplete="off">
+            <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="validations">
+            <p>Password must contains</p>
+            <ul class="allChecks">
+                <li>At least 10 Characters Long</li>
+                <li>At least 1 UpperCase letter (A,B,...Z)</li>
+                <li>At least 1 lowercase letter (a,b,...z)</li>
+                <li>At least 1 special symbol (!,@,...$)</li>
+                <li>At least 1 Number (0,1,2...9)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
