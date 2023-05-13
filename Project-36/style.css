@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eaeaea;
+}
+
+.container {
+  width: 420px;
+  height: 265px;
+  padding: 20px;
+  border: 4px dotted #893168;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #893168;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.input {
+  width: 100%;
+  position: relative;
+}
+
+.input input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 0 30px;
+  border: 3px solid #893168;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input i {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  cursor: pointer;
+}
+
+.validations {
+  width: 100%;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.validations p {
+  font-weight: 600;
+}
+
+.allChecks {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.allChecks li {
+  width: 180px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #893168;
+  text-align: start;
+}
