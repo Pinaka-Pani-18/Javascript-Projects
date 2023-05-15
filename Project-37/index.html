@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>RGB Color Slider</h3>
+
+        <div class="colorPreview"></div>
+
+        <div class="colorContainer">
+            <div class="box">
+                <label for="red">R</label>
+                <input type="range" value="0" min="0" max="255" id="red">
+            </div>
+            <div class="box">
+                <label for="green">G</label>
+                <input type="range" value="0" min="0" max="255" id="green">
+            </div>
+            <div class="box">
+                <label for="blue">B</label>
+                <input type="range" value="0" min="0" max="255" id="blue">
+            </div>
+        </div>
+
+        <div class="buttonContainer">
+            <input type="text" id="colorCode" value="rgb(0,0,0)" readonly>
+            <button class="copyCodeBtn">Copy Code</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
