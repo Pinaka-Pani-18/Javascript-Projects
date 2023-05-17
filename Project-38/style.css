@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 200px;
+  position: absolute;
+  transition: 0.2s ease-out;
+}
+
+img {
+  width: 100%;
+}
