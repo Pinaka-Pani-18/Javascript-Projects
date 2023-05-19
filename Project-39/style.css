@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: yellow;
+  max-width: 1250px;
+  margin: 50px auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.top h1 {
+  font-size: 32px;
+}
+
+.createBtn {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container h1 img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.note {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  display: inline;
+  border: 3px dotted black;
+  border-radius: 10px;
+}
+
+.note p {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+}
+
+.note img {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
