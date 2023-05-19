@@ -28,7 +28,15 @@ body {
 }
 
 .top h1 {
-  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.top h1 img {
+  width: 35px;
+  margin-left: 10px;
 }
 
 .createBtn {
@@ -44,9 +52,8 @@ body {
   cursor: pointer;
 }
 
-.container h1 img {
-  width: 40px;
-  margin-left: 10px;
+.createBtn:active {
+  transform: scale(0.95);
 }
 
 .notesContainer {
