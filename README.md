@@ -39,3 +39,7 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-33 (Catch the Insect Game)</h3>
 <h3>Project-34 (Image Editing)</h3>
 <h3>Project-35 (Filterable Gallery)</h3>
+<h3>Project-36 (Password Validation)</h3>
+<h3>Project-37 (RGB Color Slider)</h3>
+<h3>Project-38 (Eagle follows mouse)</h3>
+<h3>Project-39 (Notes App)</h3>
