@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 250px auto;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 50%;
+  height: 100px;
+  background-color: white;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0 50px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.list.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+  user-select: none;
+  pointer-events: none;
+}
+
+.list li {
+  background-color: white;
+  color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+}
+
+.list li.active {
+  background-color: blueviolet;
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  height: 100px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  background: linear-gradient(90deg, white 70%, transparent);
+  left: 0;
+}
+
+.right {
+  background: linear-gradient(-90deg, white 70%, transparent);
+  right: 0;
+}
+
+i {
+  background-color: transparent;
+  padding: 17px 20px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+i:hover {
+  background-color: rgba(213, 211, 211, 0.475);
+}
+
+.fa-angle-right {
+  right: 20%;
+}
+
+.fa-angle-left {
+  left: 20%;
+}
