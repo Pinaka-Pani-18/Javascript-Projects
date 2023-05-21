@@ -12,8 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #053a5f;
   flex-direction: column;
+  background-color: #053a5f;
 }
 
 h1 {
@@ -23,9 +23,9 @@ h1 {
 }
 
 .container {
-  background-color: white;
-  padding: 50px;
   width: 400px;
+  padding: 50px;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -36,19 +36,19 @@ h1 {
 .inputContainer input {
   width: 100%;
   height: 50px;
-  padding: 0 30px;
   font-size: 18px;
+  padding: 0 30px;
+  border: 1px solid #053a5f;
   border-radius: 10px;
   outline: none;
-  border: 1px solid #053a5f;
 }
 
 .inputContainer i {
-  position: absolute;
-  right: 10px;
   font-size: 24px;
   color: #053a5f;
+  position: absolute;
   top: 50%;
+  right: 10px;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -62,8 +62,8 @@ h1 {
 
 .rangeContainer input {
   width: 90%;
-  cursor: pointer;
   accent-color: #053a5f;
+  cursor: pointer;
 }
 
 /* For Firefox */
@@ -91,11 +91,11 @@ h1 {
 }
 
 .generateBtn {
+  font-size: 24px;
   width: 100%;
   height: 50px;
-  font-size: 24px;
-  background-color: #053a5f;
   color: white;
+  background-color: #053a5f;
   border: none;
   border-radius: 10px;
   cursor: pointer;
