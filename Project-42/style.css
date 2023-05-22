@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #998fc7;
+  max-width: 1000px;
+  margin: 2px auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #28262c;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 400px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.inputContainer input {
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 20px;
+  color: whitesmoke;
+  background-color: #28262c;
+  border-radius: 50px;
+  border: 3px solid whitesmoke;
+}
+
+.inputContainer i {
+  font-size: 24px;
+  color: #998fc7;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imagesContainer .imageBox {
+  position: relative;
+  width: 200px;
+  height: 290px;
+  border: 3px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imagesContainer .imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.imagesContainer .imageBox:hover img {
+  transform: scale(1.1);
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  box-shadow: inset 0 0 50px black, inset 0 0 100px black;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  color: whitesmoke;
+  opacity: 0.8;
+}
