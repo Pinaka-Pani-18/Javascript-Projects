@@ -40,6 +40,8 @@ copyEl.addEventListener("click",()=>{
     }, 1500);
 })
 
+generatePassword();
+
 
 
 
