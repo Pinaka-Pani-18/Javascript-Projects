@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: url("iamge.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+i {
+  color: red;
+  position: absolute;
+  font-size: 40px;
+  opacity: 0;
+}
+
+i.active {
+  animation: heart 1s linear forwards;
+}
+
+@keyframes heart {
+  10% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
