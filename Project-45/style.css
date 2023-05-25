@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: lightgoldenrodyellow;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.listItems {
+  width: 420px;
+  padding: 25px;
+  background: white;
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  list-style: none;
+}
+
+.item {
+  background: white;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: grab;
+}
+
+.item .itemContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item .itemContent img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.item .itemContent span {
+  font-size: 20px;
+}
+
+.item i {
+  color: black;
+  font-size: 18px;
+}
+
+.item.dragging {
+  opacity: 0.4;
+}
+
+.item.dragging .itemContent,
+.item.dragging i {
+  opacity: 0;
+}
