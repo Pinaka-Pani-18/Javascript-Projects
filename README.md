@@ -46,3 +46,6 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-40 (Draggable Menu Slider)</h3>
 <h3>Project-41 (Random Password Generator)</h3>
 <h3>Project-42 (Responsive Image Gallery With Search Box)</h3>
+<h3>Project-43 (Random Color Palette Generator)</h3>
+<h3>Project-44 (Double Click Animation)</h3>
+<h3>Project-45 (Drag and Drop List)</h3>
