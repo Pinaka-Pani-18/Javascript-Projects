@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <h1>Currency Convertor</h1>
+    <div class="container">
+        <form action="#">
+            <div class="amount">
+                <p>Amount</p>
+                <input type="text" value="100" placeholder="Enter the amount">
+            </div>
+            <div class="FromToContainer">
+                <div class="from">
+                    <p>From :</p>
+                    <div class="selectBox">
+                        <!-- You can use other countries currency options in given below-->
+                        <select>
+                            <option value="INR">India (INR)</option>
+                            <option value="USD">United States (USD)</option>
+                            <option value="AFN">Afghanistan (AFN)</option>
+                            <option value="CNY">China (CNY)</option>
+                            <option value="ARS">Argentine (ARS)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="to">
+                    <p>To :</p>
+                    <div class="selectBox">
+                        <!-- You can use other countries currency options in given below-->
+                        <select>
+                            <option value="INR">India (INR)</option>
+                            <option value="USD">United States (USD)</option>
+                            <option value="AFN">Afghanistan (AFN)</option>
+                            <option value="CNY">China (CNY)</option>
+                            <option value="ARS">Argentine (ARS)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="convertedAmount">Click on "Convert Currency" Button</div>
+            <button class="convertBtn">Convert Currency</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
