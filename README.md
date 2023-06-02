@@ -52,3 +52,5 @@ In this repository I have created basic projects using HTML, CSS and JS from beg
 <h3>Project-46 (Navigation Menu Bar)</h3>
 <h3>Project-47 (Currency Convertor)</h3>
 <h3>Project-48 (Number Guessing Game)</h3>
+<h3>Project-49 (Age Calculator)</h3>
+<h3>Project-50 (Tik Tac Toe Game)</h3>
