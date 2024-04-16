@@ -57,9 +57,9 @@ body {
   transform: scale(0.95);
 }
 
-/* Insect Selection Container */
+/* Fruit Selection Container */
 
-.insectList {
+.fruitList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,7 +67,7 @@ body {
   gap: 20px;
 }
 
-.insectBtn {
+.fruitBtn {
   background-color: transparent;
   border: 3px solid white;
   border-radius: 10px;
@@ -77,12 +77,12 @@ body {
   cursor: pointer;
 }
 
-.insectBtn:hover {
+.fruitBtn:hover {
   background-color: white;
   color: red;
 }
 
-.insectBtn img {
+.fruitBtn img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -128,7 +128,7 @@ body {
   transform: scale(1);
 }
 
-.insect {
+.fruit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,11 +140,11 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.insect.caught {
+.fruit.caught {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.insect img {
+.fruit img {
   width: 100px;
   height: 100px;
 }
